@@ -1,5 +1,6 @@
 To run the project on localserver:-
 1.choose Command " npm run start"
+2.use 3000 port to run application
 2.Click on Login button to Authorization and login/signup
 3.When we navigate on Main page Click the ADD button to create a new to-do
 4.You can Drag and Drop in difffernt coloum.

@@ -8,10 +8,11 @@ import rootReducer from "./reducer";
 import { configureStore } from "@reduxjs/toolkit";
 import { Toaster } from "react-hot-toast";
 import { Auth0Provider } from "@auth0/auth0-react";
+
 const store = configureStore({
   reducer: rootReducer,
 });
-
+// console.log("jdnf", process.env.LOGIN_REDIRECT_URI);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
