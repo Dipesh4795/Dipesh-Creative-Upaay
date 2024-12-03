@@ -16,7 +16,7 @@ export function Column({
   });
 
   return (
-    <div className="flex w-[33%] mb-6 flex-col rounded-lg bg-[#F5F5F5] gap-3 p-4">
+    <div className="flex  w-full md:w-[33%] mb-6 flex-col rounded-lg bg-[#F5F5F5] gap-3 p-4">
       <div
         className={`flex items-center w-full  ${
           column.id === "TODO" ? "justify-between" : "justify-start"

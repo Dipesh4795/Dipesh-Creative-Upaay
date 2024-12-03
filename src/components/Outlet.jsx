@@ -26,7 +26,7 @@ const Outlet = ({ setConfirmationModal }) => {
   };
 
   return (
-    <div className="h-full flex justify-center  item-center w-[84%]   border-l-[1px] border-l-stone-800">
+    <div className="h-full flex justify-center  item-center w-full  border-l-[1px] border-l-stone-800">
       <div className=" w-[96%] mt-8 h-full flex  flex-col gap-5 justify-center items-center ">
         <div className="w-full  flex justify-between  pr-[60px] items-center">
           <div className="flex  text-4xl  items-center justify-center gap-3">
@@ -39,7 +39,7 @@ const Outlet = ({ setConfirmationModal }) => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center gap-3">
+          <div className=" hidden md:flex justify-center items-center gap-3">
             <div className="p-1 bg-blue-400 cursor-pointer rounded-md">
               <IoIosAdd size={10} />
             </div>
@@ -67,8 +67,8 @@ const Outlet = ({ setConfirmationModal }) => {
             </div>
           </div>
         </div>
-        <div className="w-full  flex justify-between  items-start">
-          <div className="flex justify-center items-center gap-4">
+        <div className="w-full  flex  justify-between  items-start">
+          <div className="flex   flex-col sm:flex-row items-start justify-center sm:items-center gap-4">
             <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
               <InputLabel id="demo-select-small-label text-xs">
                 Filter
@@ -105,7 +105,7 @@ const Outlet = ({ setConfirmationModal }) => {
             {/* <p>{Filter}</p>
             <p>{date.format("YYYY-MM-DD")}</p> */}
           </div>
-          <div className="flex justify-center items-center gap-2 ">
+          <div className=" hidden md:flex justify-center items-center gap-2 ">
             <div className="flex justify-center items-center pr-5 border-r-[1px] border-r-slate-600">
               <button className="p-2 rounded-md text-sm flex gap-2 border-[2px] border-black justify-center items-center">
                 <MdOutlinePersonAddAlt size={18} />

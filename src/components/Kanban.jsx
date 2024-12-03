@@ -153,7 +153,7 @@ export default function Kanban({ setConfirmationModal, Filter }) {
 
   return (
     <div className=" w-full mt-4 ">
-      <div className="flex gap-8">
+      <div className="flex flex-col md:flex-row gap-8">
         <DndContext onDragEnd={handleDragEnd}>
           {COLUMNS.map((column) => {
             return (

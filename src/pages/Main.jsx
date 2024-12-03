@@ -7,14 +7,14 @@ import ConfirmationModal from "../components/ConfirmationModal";
 const Main = () => {
   const [confirmationModal, setConfirmationModal] = useState(null);
   return (
-    <div className="flex w-screen  justify-center items-center flex-col">
+    <div className="flex w-screen justify-center items-center  flex-col">
       <Navbar />
-      <div className="w-full  h-full  flex justify-center  items-center ">
-        <div className=" w-[96%] h-full flex flex-row justify-start items-start">
-          <Sidebar />
-          <Outlet setConfirmationModal={setConfirmationModal} />
-        </div>
+
+      <div className=" w-11/12 h-full flex flex-row justify-start items-start">
+        <Sidebar />
+        <Outlet setConfirmationModal={setConfirmationModal} />
       </div>
+
       {confirmationModal && (
         <ConfirmationModal
           setConfirmationModal={setConfirmationModal}

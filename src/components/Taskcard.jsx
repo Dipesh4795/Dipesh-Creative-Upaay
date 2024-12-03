@@ -136,7 +136,7 @@ export function TaskCard({
       ) : (
         ""
       )}
-      <div className="flex relative  w-full mt-3 justify-between items-center">
+      <div className="flex relative  w-full mt-3 gap-3  flex-col items-start lg:flex-row justify-between lg:items-center">
         <div className="flex   justify-center items-center ">
           <img
             src={image}
@@ -154,7 +154,7 @@ export function TaskCard({
             className="w-[25px]  absolute left-8 h-[25px] rounded-full"
           />
         </div>
-        <div className="flex w-full  gap-2 justify-end items-center">
+        <div className="flex w-full flex-col lg:flex-row items-start gap-2 justify-end lg:items-center">
           <div className="flex justify-center text-sm font-light items-center gap-1">
             <LiaCommentSolid size={15} />
             <p>10 Comments</p>

@@ -18,9 +18,9 @@ const Navbar = () => {
       : process.env.REACT_APP_LOGOUT_URI_PROD;
 
   return (
-    <div className="w-screen  h-[60px]  flex items-center justify-center  border-b-stone-800  border-b-[1px]">
-      <div className="w-[96%]  h-full  flex  justify-start  items-center">
-        <div className="h-full w-[19%] border-r-gray-700 border-r-[1px]  flex  gap-5 justify-between items-center ">
+    <div className="w-screen  h-[80px]  flex items-center justify-center  border-b-stone-800  border-b-[1px]">
+      <div className=" w-11/12 h-full  flex  justify-start  items-center">
+        <div className="h-full w-[40%]  md:w-[20%] border-r-gray-700 border-r-[1px]  flex  gap-5 justify-between items-center ">
           <div className="flex flex-row justify-center items-center gap-2">
             <img src={image1} alt="logo " className="w-[20px] h-[20px]" />
             <p> Project M.</p>
@@ -29,10 +29,10 @@ const Navbar = () => {
             <RxDoubleArrowLeft size={20} />
           </div>
         </div>
-        <div className="w-full px-4 flex  flex-row  justify-between items-center ">
-          <div>
+        <div className="w-full px-4 flex  flex-row   justify-end md:justify-between items-center ">
+          <div className="hidden md:flex">
             <div
-              className="absolute top-5  pl-3  hover:scale-90"
+              className="absolute top-8  pl-3  hover:scale-90"
               onClick={() => alert("result your query")}
             >
               <CiSearch color="black" size={20} />
@@ -41,19 +41,19 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search for anything ..."
-              className="bg-[#F5F5F5] text-black placeholder-slate-600 placeholder:text-sm  placeholder:p-3   px-[40px]  py-2  rounded-[0.5rem]  w-[24rem] "
+              className="bg-[#F5F5F5] text-black placeholder-slate-600 placeholder:text-sm  placeholder:p-3   px-[40px]  py-2  rounded-[0.5rem]   w-[100px] md:w-[24rem] "
             />
           </div>
           <div className=" flex justify-center items-center gap-8 ">
-            <div className=" flex justify-center items-center gap-4 ">
+            <div className="  hidden md:flex justify-center items-center gap-4 ">
               <CiCalendarDate size={20} />
               <CiSquareQuestion size={20} />
               <IoMdNotificationsOutline size={20} />
             </div>
             <div className="flex justify-center items-center gap-4">
               <div className="flex flex-col justify-center items-end text-sm">
-                <p className=" font-bold">{user.name}</p>
-                <p className="font-light ">Rajasthan, India</p>
+                <p className=" font-bold text-xs lg:text-md">{user.name}</p>
+                <p className="font-light hidden lg:flex">Rajasthan, India</p>
               </div>
               <img
                 src={user.picture}
