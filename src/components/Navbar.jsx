@@ -53,7 +53,7 @@ const Navbar = () => {
             <div className="flex justify-center items-center gap-4">
               <div className="flex flex-col justify-center items-end text-sm">
                 <p className=" font-bold text-xs lg:text-md">{user.name}</p>
-                <p className="font-light hidden lg:flex">Rajasthan, India</p>
+                <p className="font-light hidden sm:flex">Rajasthan, India</p>
               </div>
               <img
                 src={user.picture}

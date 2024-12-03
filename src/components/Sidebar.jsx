@@ -29,7 +29,7 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className=" w-[38%] pr-[9px] sm:pr-0 sm:w-[40%] md:w-[20%] h-full flex   font-inter flex-col justfiy-center  items-start">
+    <div className=" w-[38%] pr-[9px] sm:pr-0 sm:w-[40%] md:w-[20%] h-full flex border-r-[1px]  border-black  font-inter flex-col justfiy-center  items-start">
       <div className=" pt-4 flex flex-col justify-start  cursor-pointer items-start gap-4  font-light">
         <div className="flex justify-center items-start gap-5">
           <IoHomeOutline size={20} color="black" />
