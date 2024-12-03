@@ -12,6 +12,11 @@ import { useAuth0 } from "@auth0/auth0-react";
 const Navbar = () => {
   const { logout } = useAuth0();
   const { user, isAuthenticated, isLoading } = useAuth0();
+  const logoutUri =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_LOGOUT_URI
+      : process.env.REACT_APP_LOGOUT_URI_PROD;
+
   return (
     <div className="w-screen  h-[60px]  flex items-center justify-center  border-b-stone-800  border-b-[1px]">
       <div className="w-[96%]  h-full  flex  justify-start  items-center">
@@ -50,13 +55,17 @@ const Navbar = () => {
                 <p className=" font-bold">{user.name}</p>
                 <p className="font-light ">Rajasthan, India</p>
               </div>
-              <img src={user.picture} className="w-10 h-10 rounded-full" />
+              <img
+                src={user.picture}
+                loading="lazy"
+                className="w-10 h-10 rounded-full"
+              />
               <RiArrowDownSLine size={20} />
               <div
                 className=" bg-yellow-400 p-3 justify-center cursor-pointer rounded-lg text-sm items-center flex"
                 onClick={() =>
                   logout({
-                    logoutParams: { returnTo: process.env.LOGOUT_URI },
+                    logoutParams: { returnTo: logoutUri },
                   })
                 }
               >

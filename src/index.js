@@ -12,7 +12,14 @@ import { Auth0Provider } from "@auth0/auth0-react";
 const store = configureStore({
   reducer: rootReducer,
 });
-// console.log("jdnf", process.env.LOGIN_REDIRECT_URI);
+// console.log("jdnf", process.env.REACT_APP_LOGIN_REDIRECT_URI);
+
+let redirectUri =
+  process.env.NODE_ENV === "development"
+    ? process.env.REACT_APP_LOGIN_REDIRECT_URI
+    : process.env.REACT_APP_LOGIN_REDIRECT_URI_PROD;
+
+console.log("jdnf", redirectUri);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -21,7 +28,7 @@ root.render(
         domain="dev-cvo2ov8l4cdq6mn4.us.auth0.com"
         clientId="Ckn3nSOXn3uJrFKLxOQ3Lan4xOeIRRke"
         authorizationParams={{
-          redirect_uri: process.env.LOGIN_REDIRECT_URI,
+          redirect_uri: redirectUri,
         }}
       >
         <BrowserRouter>
