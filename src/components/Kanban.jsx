@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 const color1 = "blue-600";
 const color2 = "green-300";
 const color3 = "green-300";
-// console.log("hello")
+
 const COLUMNS = [
   { id: "TODO", title: "To Do", color: color1 },
   { id: "IN_PROGRESS", title: "On Progress", color: color2 },
