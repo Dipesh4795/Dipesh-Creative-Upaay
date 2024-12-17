@@ -16,6 +16,7 @@ import { MdOutlinePersonAddAlt } from "react-icons/md";
 import { PiEqualsFill } from "react-icons/pi";
 import { CgMenuGridO } from "react-icons/cg";
 import Kanban from "./Kanban";
+// console.log("Home");
 
 const Outlet = ({ setConfirmationModal }) => {
   const [Filter, setFilter] = useState(null);
