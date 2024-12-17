@@ -66,7 +66,7 @@ export default function Kanban({ setConfirmationModal, Filter }) {
           }
         : task
     );
-
+    // console.log("hello");
     dispatch(setAllTasks(currtask));
     setTasks(currtask);
   };
