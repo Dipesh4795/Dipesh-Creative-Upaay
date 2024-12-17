@@ -8,6 +8,7 @@ import { AiTwotoneDelete } from "react-icons/ai";
 import { GrEdit } from "react-icons/gr";
 import { LuFiles } from "react-icons/lu";
 import image from "../assets/image.png";
+// console.log("Home");
 export function TaskCard({
   task,
   addsubsection,
