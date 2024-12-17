@@ -1,6 +1,7 @@
 import { useDroppable } from "@dnd-kit/core";
 import { TaskCard } from "./Taskcard";
 import { IoIosAdd } from "react-icons/io";
+// console.log("Home");
 export function Column({
   column,
   tasks,
